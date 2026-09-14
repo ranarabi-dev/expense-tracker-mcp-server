@@ -1,0 +1,20 @@
+[project]
+name = "fastmcp-mcp-remote"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "RanaRabi123", email = "rr1722322@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastmcp>=3.4.7",
+]
+
+[project.scripts]
+fastmcp-mcp-remote = "fastmcp_mcp_remote:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
